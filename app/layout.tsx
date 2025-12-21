@@ -18,22 +18,18 @@ export const metadata: Metadata = {
   description: "Computer Science Student with hands-on experience in programming, databases, and software development.",
 };
 
+import { SmoothScroll } from "@/components/ui/smooth-scroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white relative`}
-      >
-        <ParticleBackground />
-        <div className="relative z-10 pointer-events-none">
-          <div className="pointer-events-auto">
-            {children}
-          </div>
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <SmoothScroll />
+        {children}
       </body>
     </html>
   );
