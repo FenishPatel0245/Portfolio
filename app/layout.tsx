@@ -26,10 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <SmoothScroll />
-        {children}
+    <html lang="en" className="dark">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white relative`}
+      >
+        <ParticleBackground />
+        <div className="relative z-10 pointer-events-none">
+          <div className="pointer-events-auto">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -145,10 +145,6 @@
   }
 
   body {
-    @apply bg-background text-foreground overflow-x-hidden antialiased;
-  }
-
-  html {
-    scroll-behavior: smooth;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
 }
