@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Computer Science Student with hands-on experience in programming, databases, and software development.",
 };
 
-import { SmoothScroll } from "@/components/ui/smooth-scroll";
+
 
 export default function RootLayout({
   children,
