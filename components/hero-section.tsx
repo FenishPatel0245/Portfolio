@@ -45,12 +45,12 @@ export function HeroSection() {
                             <div className="flex flex-nowrap justify-center md:justify-start gap-0 w-full">
                                 <GradualSpacing
                                     text="Fenish"
-                                    className="text-5xl md:text-8xl font-bold tracking-tight text-white !justify-start shrink-0"
+                                    className="text-4xl md:text-8xl font-bold tracking-tight text-white !justify-start shrink-0"
                                     startDelay={0}
                                 />
                                 <GradualSpacing
                                     text="Patel"
-                                    className="text-5xl md:text-8xl font-bold tracking-tight text-zinc-500 !justify-start shrink-0"
+                                    className="text-4xl md:text-8xl font-bold tracking-tight text-zinc-500 !justify-start shrink-0"
                                     startDelay={0.5}
                                 />
                             </div>
