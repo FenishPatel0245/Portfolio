@@ -23,7 +23,7 @@ export function HeroSection() {
     return (
         <section
             ref={ref}
-            className="relative w-full min-h-[75vh] flex items-center overflow-visible bg-transparent pt-20"
+            className="relative w-full min-h-screen md:min-h-[75vh] flex items-center overflow-visible bg-transparent pt-20 md:pt-20 pb-10"
         >
             {/* LAYER 1: Atmospheric Glow - EXTREMELY SUBTLE */}
             <div
@@ -45,12 +45,12 @@ export function HeroSection() {
                             <div className="flex flex-nowrap justify-center md:justify-start gap-0 w-full">
                                 <GradualSpacing
                                     text="Fenish"
-                                    className="text-4xl md:text-8xl font-bold tracking-tight text-white !justify-start shrink-0"
+                                    className="text-6xl md:text-8xl font-bold tracking-tight text-white !justify-start shrink-0"
                                     startDelay={0}
                                 />
                                 <GradualSpacing
                                     text="Patel"
-                                    className="text-4xl md:text-8xl font-bold tracking-tight text-zinc-500 !justify-start shrink-0"
+                                    className="text-6xl md:text-8xl font-bold tracking-tight text-zinc-500 !justify-start shrink-0"
                                     startDelay={0.5}
                                 />
                             </div>
@@ -82,10 +82,10 @@ export function HeroSection() {
                     initial={{ opacity: 0, y: 4 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
-                    className="absolute top-1/2 right-[-15%] md:right-[-20%] -translate-y-1/2 w-full md:w-[80%] h-[120vh] z-[10] pointer-events-none flex items-center justify-center mix-blend-normal will-change-transform overflow-visible"
+                    className="absolute top-[60%] md:top-1/2 left-0 md:left-auto right-0 md:right-[-20%] -translate-y-1/2 w-full md:w-[80%] h-[50vh] md:h-[120vh] z-[10] pointer-events-none flex items-center justify-center mix-blend-normal will-change-transform overflow-visible"
                 >
                     {/* Robot Container - Wider container + Extra Height to prevent clipping */}
-                    <FloatingElement depth={1.0} className="w-full h-full relative scale-[1.0] md:scale-[0.9] origin-center">
+                    <FloatingElement depth={1.0} className="w-full h-full relative scale-[1.2] md:scale-[0.9] origin-center">
                         <div className="w-full h-full relative flex items-center justify-center pointer-events-auto">
                             <SplineScene
                                 scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"

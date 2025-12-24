@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ParticleBackground } from "@/components/ui/particle-background";
+import SmoothScroll from "@/components/SmoothScroll";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white relative`}
       >
+        <SmoothScroll />
         <ParticleBackground />
+        <Analytics />
         <div className="relative z-10 pointer-events-none">
           <div className="pointer-events-auto">
             {children}

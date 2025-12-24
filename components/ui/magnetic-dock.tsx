@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 
 export function MagneticDock() {
     return (
-        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 mb-4 hidden md:block">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 mb-4 block w-max max-w-[90vw]">
             <div className="flex items-end gap-2 p-3 rounded-2xl bg-black/50 backdrop-blur-md border border-white/10 shadow-xl">
                 <DockIcon href="https://github.com/FenishPatel0245" icon={Github} label="GitHub" />
                 <DockIcon href="https://www.linkedin.com/in/fenish-patel-865662243" icon={Linkedin} label="LinkedIn" />
